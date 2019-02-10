@@ -1,0 +1,28 @@
+{
+  "name": "stylelint-config-outside-in-order",
+  "version": "0.0.1",
+  "description": "Stylelint config that sorts related properties together thinking outside and outstanding first.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emm-ess/stylelint-config-outside-in-order.git"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "stylelint-order",
+    "stylelint-plugin",
+    "css",
+    "property",
+    "order"
+  ],
+  "author": "Marten Schälicke <hallo@emm-ess.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emm-ess/stylelint-config-outside-in-order/issues"
+  },
+  "homepage": "https://github.com/emm-ess/stylelint-config-outside-in-order#readme",
+  "dependencies": {
+    "stylelint-order": "^2.0.0"
+  }
+}
