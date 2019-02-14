@@ -9,7 +9,7 @@ Properties are grouped as follows:
 3. Visual (including borders)
 4. Typography
 5. Animation
-6. Misx
+6. Misc
 
 ```css
 .declaration-order {
@@ -53,13 +53,13 @@ Properties are grouped as follows:
 
 ## Usage
 
-1.  Add stylelint and this package to your project:
+1.  Add Stylelint and this package to your project:
 
 ```bash
 npm install --save-dev stylelint stylelint-config-outside-in-order
 ```
 
-2.  Add this package to the end of your extends array inside Stylelint configuration:
+2.  Add this package to the end of the extends array inside your Stylelint configuration:
 
 ```javascript
 {
@@ -72,4 +72,4 @@ npm install --save-dev stylelint stylelint-config-outside-in-order
 
 ## Credits
 
-inspired by [https://github.com/constverum/stylelint-config-rational-order](stylelint-config-rational-order) and several discussions around the web & with colleagues
+inspired by [stylelint-config-rational-order](https://github.com/constverum/stylelint-config-rational-order) and several discussions around the web & with colleagues
