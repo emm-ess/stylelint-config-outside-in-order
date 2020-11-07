@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-outside-in-order",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stylelint config that sorts related properties together thinking outside and outstanding first.",
   "main": "index.js",
   "repository": {
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/emm-ess/stylelint-config-outside-in-order#readme",
   "dependencies": {
-    "stylelint-order": "^2.0.0"
+    "stylelint-order": "^4.1.0"
   }
 }
