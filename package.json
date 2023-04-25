@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/emm-ess/stylelint-config-outside-in-order#readme",
   "dependencies": {
-    "stylelint-order": "^5.0.0"
+    "stylelint-order": "^6.0.3"
   }
 }
