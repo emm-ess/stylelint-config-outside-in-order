@@ -6,12 +6,12 @@ const animation = require('./groups/5_animation')
 const misc = require('./groups/6_misc')
 
 const outsideInOrder = [
-  ...positioning,
-  ...boxModel,
-  ...visual,
-  ...typography,
-  ...animation,
-  ...misc,
+    ...positioning,
+    ...boxModel,
+    ...visual,
+    ...typography,
+    ...animation,
+    ...misc,
 ]
 
 module.exports = {

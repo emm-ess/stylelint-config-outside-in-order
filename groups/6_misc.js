@@ -22,4 +22,4 @@ module.exports = [
     'touch-action',
     'will-change',
     'zoom',
-];
+]

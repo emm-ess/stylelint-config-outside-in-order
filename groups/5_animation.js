@@ -4,7 +4,7 @@ module.exports = [
     'transition-timing-function',
     'transition-duration',
     'transition-property',
-    
+
     'animation',
     'animation-name',
     'animation-duration',
@@ -14,4 +14,4 @@ module.exports = [
     'animation-iteration-count',
     'animation-direction',
     'animation-fill-mode',
-];
+]

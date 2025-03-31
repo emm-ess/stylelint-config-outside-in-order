@@ -2,11 +2,6 @@
   "name": "stylelint-config-outside-in-order",
   "version": "0.1.0",
   "description": "Stylelint config that sorts related properties together thinking outside and outstanding first.",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/emm-ess/stylelint-config-outside-in-order.git"
-  },
   "keywords": [
     "stylelint",
     "stylelint-config",
@@ -16,13 +11,52 @@
     "property",
     "order"
   ],
-  "author": "Marten Schälicke <hallo@emm-ess.de>",
-  "license": "MIT",
+  "homepage": "https://github.com/emm-ess/stylelint-config-outside-in-order#readme",
   "bugs": {
     "url": "https://github.com/emm-ess/stylelint-config-outside-in-order/issues"
   },
-  "homepage": "https://github.com/emm-ess/stylelint-config-outside-in-order#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emm-ess/stylelint-config-outside-in-order.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Marten Schälicke",
+    "url": "https://emm-ess.de"
+  },
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky",
+    "lint": "npm-run-all lint:script lint:package-json",
+    "lint:script": "eslint --report-unused-disable-directives --cache --fix .",
+    "lint:package-json": "sort-package-json package.json"
+  },
+  "commitlint": {
+    "extends": "@commitlint/config-conventional"
+  },
+  "lint-staged": {
+    "*.{js,json}": "eslint --cache --fix",
+    "package.json": "sort-package-json --quiet"
+  },
+  "browserslist": [
+    "maintained node versions"
+  ],
   "dependencies": {
     "stylelint-order": "^6.0.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@emm-ess-configs/eslint-config": "^0.2.3",
+    "@eslint/compat": "^1.2.7",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "npm-run-all2": "^7.0.2",
+    "sort-package-json": "^3.0.0"
+  },
+  "overrides": {
+    "eslint": "^9.23.0"
   }
 }

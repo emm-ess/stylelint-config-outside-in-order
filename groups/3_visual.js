@@ -94,4 +94,4 @@ module.exports = [
     'perspective-origin',
     'filter',
     'cursor',
-];
+]

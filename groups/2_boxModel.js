@@ -20,8 +20,8 @@ module.exports = [
     'padding-right',
     'padding-bottom',
     'padding-left',
-    
-    'overflow', 
-    'overflow-x', 
-    'overflow-y'
-];
+
+    'overflow',
+    'overflow-x',
+    'overflow-y',
+]
