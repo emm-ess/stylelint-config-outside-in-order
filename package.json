@@ -26,10 +26,10 @@
   },
   "main": "index.js",
   "scripts": {
-    "prepare": "husky",
     "lint": "npm-run-all lint:script lint:package-json",
+    "lint:package-json": "sort-package-json package.json",
     "lint:script": "eslint --report-unused-disable-directives --cache --fix .",
-    "lint:package-json": "sort-package-json package.json"
+    "prepare": "husky"
   },
   "commitlint": {
     "extends": "@commitlint/config-conventional"
@@ -41,22 +41,22 @@
   "browserslist": [
     "maintained node versions"
   ],
+  "overrides": {
+    "eslint": "^9.38.0"
+  },
   "dependencies": {
-    "stylelint-order": "^6.0.4"
+    "stylelint-order": "^7.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0",
-    "@emm-ess-configs/eslint-config": "^0.2.3",
-    "@eslint/compat": "^1.2.7",
-    "eslint": "^9.23.0",
-    "globals": "^16.0.0",
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@emm-ess-configs/eslint-config": "^0.3.1",
+    "@eslint/compat": "^1.4.0",
+    "eslint": "^9.38.0",
+    "globals": "^16.4.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
-    "npm-run-all2": "^7.0.2",
-    "sort-package-json": "^3.0.0"
-  },
-  "overrides": {
-    "eslint": "^9.23.0"
+    "lint-staged": "^16.2.6",
+    "npm-run-all2": "^8.0.4",
+    "sort-package-json": "^3.4.0"
   }
 }
