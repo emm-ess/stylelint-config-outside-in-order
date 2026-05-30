@@ -1,4 +1,4 @@
-module.exports = [
+export default [
     'box-sizing',
 
     'width',
